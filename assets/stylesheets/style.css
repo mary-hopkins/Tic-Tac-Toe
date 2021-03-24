@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General */
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(236, 234, 234);
+}
+header {
+    border: 1px solid gray;
+    height: 30px;
+    padding: 10px 30px; 
+    background-color: white;
+}
+.site-logo {
+    float: left;
+    vertical-align: sub;
+}
+nav {
+    float: right;
+}
+nav li {
+    display: inline-block;
+    padding-left: 10px;
+    vertical-align: sub;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+section {
+    padding: 10px 10px;
+    border: 1px solid gray;
+    margin: 20px 0px;
+    background-color: white;
+    height: auto;
+}
+
+.rule-block h1 {
+    font-size: larger;
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 10px 10px;
+}
+.rule-block p {
+    padding: 5px 10px;
+    font-size: large;
+    padding-bottom: 10px;
+}
+.player-block {
+    margin: 0 auto;
+    height: inherit;
+    display: flex;
+    vertical-align: middle;
+}
+.player {
+    flex: 1, 1, auto;
+}
+.player-block button {
+    width: 10%;
+    margin: auto;
+    flex: 1, 1, auto;
+}
+form {
+    height: auto;
+    width: 40%;
+    border: 1px solid gray;
+    margin: 0 auto;
+    overflow: auto;
+    margin-top: 10px;
+}
+.player-block h2 {
+    padding: 5px 10px;
+    font-size: large;
+    padding-bottom: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+.pl1 {
+    display: inline-block;
+}
+.pl2 {
+    display: inline-block;
+    margin-left: 8.9%;
+}
+
+form label {
+    margin-left: 28%;
+}
+form p {
+    margin-left: 35%;
+    padding: 5px 0px;
+}
+
+.log-block {
+    height: 100px;
+    padding: 15px 15px;
+}
+.board-block {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+.board-cell {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.cell {
+    height: 90px;
+    width: 90px;
+    background-color: lightyellow;
+    flex: none;
+    text-align: center;
+    border: 1px solid gray;
+    vertical-align: middle;
+    line-height: 80%;
+    font-size: 110px;
+}
+
+.hidden {
+    display: none;
+}
