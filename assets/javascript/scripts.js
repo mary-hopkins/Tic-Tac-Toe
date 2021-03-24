@@ -58,7 +58,7 @@ function gameMaster(player1, player2) {
       var marker_array = ["p"];
       let cells = document.querySelectorAll('.cell');
       for (var i = 0; i < cells.length; i++) {
-        post = cells[i].textContent;
+        let post = cells[i].textContent;
         marker_array.push(post);
       }
       if (marker_array.includes("")) {
