@@ -1,13 +1,13 @@
 # Tic-Tac-Toe
 
-For information about Tic-Tac-Toe in general, see the Wikipedia page => [Tic-Tac-Toe](https://en.wikipedia.org/wiki/Tic-tac-toe).
+For information about Tic-Tac-Toe in general, see the Wikipedia page => [Tic-Tac-Toe](https://en.wikipedia.org/wiki/Tic-tac-toe).  
 For information about this particular implementation of Tic-Tac-Toe, please read on...
 
-Version Number 1.0 - Broken and Sad
+Version Number 1.1 - Working but Ugly
 
 ## Project Description
 
-This project is a simple game played in the browser, with no state managing or data saving. Players may play against another person(on the same browser window) or they may choose to play against a computer AI. Game recognizes wins for any player/computer as well as scratch games. There is a restart option that allows players to start a new game or restart the current game. 
+This project is a simple game played in the browser, with no state managing or data saving. Players may play against another person on the same browser window. Game recognizes wins for any player as well as scratch games. There is a restart option that allows players to start a new game or restart the current game. 
 
 Play the game live => [Tic-Tac-Toe](https://simpletictactoe.glitch.me/).
 
@@ -22,6 +22,12 @@ Deployed to Glitch.
 
 ## Future Plans
 
-* A complete rework, this thing is ugly and broken.
-* A Jest test suite to make sure I have complete coverage of my code 
+* A complete rework, this thing is ugly and ~~broken~~.
+* A Jest test suite to make sure I have complete coverage of my code
+* Remove Player Name Input, it is stupid.
+* Computer to play against 
 * Rebuild with Angular, for practice
+
+## Past Versions
+
+* VN 1.0 - Broken and Sad

@@ -53,24 +53,6 @@ body {
     box-sizing: border-box;
     background-color: rgb(236, 234, 234);
 }
-header {
-    border: 1px solid gray;
-    height: 30px;
-    padding: 10px 30px; 
-    background-color: white;
-}
-.site-logo {
-    float: left;
-    vertical-align: sub;
-}
-nav {
-    float: right;
-}
-nav li {
-    display: inline-block;
-    padding-left: 10px;
-    vertical-align: sub;
-}
 
 main {
     width: 80%;
@@ -86,18 +68,18 @@ section {
     height: auto;
 }
 
-.rule-block h1 {
+.rules h1 {
     font-size: larger;
     font-weight: 600;
     text-decoration: underline;
     padding: 10px 10px;
 }
-.rule-block p {
+.rules p {
     padding: 5px 10px;
     font-size: large;
     padding-bottom: 10px;
 }
-.player-block {
+.players {
     margin: 0 auto;
     height: inherit;
     display: flex;
@@ -106,7 +88,7 @@ section {
 .player {
     flex: 1, 1, auto;
 }
-.player-block button {
+.players button {
     width: 10%;
     margin: auto;
     flex: 1, 1, auto;
@@ -119,7 +101,7 @@ form {
     overflow: auto;
     margin-top: 10px;
 }
-.player-block h2 {
+.players h2 {
     padding: 5px 10px;
     font-size: large;
     padding-bottom: 20px;
@@ -142,16 +124,16 @@ form p {
     padding: 5px 0px;
 }
 
-.log-block {
+.display {
     height: 100px;
     padding: 15px 15px;
 }
-.board-block {
+.board {
     margin: 0 auto;
     text-align: center;
     width: 100%;
 }
-.board-cell {
+#board-cell {
     height: 300px;
     width: 300px;
     display: flex;

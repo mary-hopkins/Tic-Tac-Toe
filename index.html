@@ -5,82 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="site-logo">tiX - taX - tOe</div>
-        <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
-        <section class="rule-block">
+
+        <section id="rules" class="block">
             <h1>Tic-Tac-Toe</h1>
             <p>
-                The object of Tic Tac Toe is to get three in a row. 
-                You play on a three by three game board. The first 
-                player is known as X and the second is O. Players 
-                alternate placing Xs and Os on the game board until 
-                either oppent has three in a row or all nine squares 
-                are filled. X always goes first, and in the event 
-                that no one has three in a row, the stalemate is 
-                called a cat game.
+                Tic-tac-toe is a paper-and-pencil game for two players, 
+                X and O, who take turns marking the spaces in a 3×3 grid. 
+                The player who succeeds in placing three of their marks 
+                in a diagonal, horizontal, or vertical row is the winner. 
+                It is a solved game with a forced draw assuming best play 
+                from both players.
                 <br><br>
                 Enter your name as Player 1 and click the X to confirm.
                 If you want to play with a friend, have them enter their
                 name in the slot for Player 2 and click the O to confirm.
                 <br><br>
-                If you would like to play against the computer, enter 
-                your name as player 1, press X to confirm and then leave
-                Player 2's name blank.  Press O to confirm the computer 
-                will play against you!
-                <br><br>
                 If you want to restart the game, click the restart button.
             </p>
         </section>
-        <section class="player-block">
-            <div class="player pl1 form1">
-                <h2>Player One</h2>
-                <label for="play1">Name:</label>
-                <input type="text" name="p1Name" id="play1" required>
-                <button id="play1confirm">X</button>
-                <p>Press the X to confirm</p>
-            </div>
-            <div class="player pl1 card1 hidden">
-                <h2>Player One</h2>
-                <h3 class="playername1"></h3>
-                <h3 >X</h3>
-            </div>
-            <button class="start-btn" type="button">Start!</button>
-            <div class="player pl2 form2">
-                <h2>Player Two</h2>
-                <label for="play2">Name:</label>
-                <input type="text" name="p2Name" id="play2">
-                <button type="button" id="play2confirm">O</button>
-                <p>Press the O to confirm</p>
-            </div>
-            <div class="player pl2 card2 hidden">
-                <h2>Player Two</h2>
-                <h3 class="playername2"></h3>
-                <h3>O</h3>
-            </div>
+
+        <section id="players" class="block">
         </section>
-        <section class="log-block">
+
+        <section id="display" class="block">
             <div class="display-cell">Message to the Players!</div>
         </section>
-        <section class="board-block">
-            <div class="board-cell">
-                
-            </div>
+
+        <section id="board" class="block">
+            <div id="board-cell"></div>
         </section>
     </main>
-    <script src="assets/javascript/scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 
