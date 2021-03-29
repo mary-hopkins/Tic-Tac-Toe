@@ -361,3 +361,7 @@ let game = Game("", "");
 window.onload = function() {
   buildGame();
 };
+
+
+/////////// Jest Test Suite Export //////////
+module.exports = Game;

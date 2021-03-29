@@ -20,6 +20,10 @@ Installation is currently very simple. Clone the repo and then navigate to the b
 A static page app. Files include index.html, style.css, scripts.js. No documentation as of now, but will add during the rework.
 Deployed to Glitch. 
 
+## Test Suite
+
+Test Suite is done with Jest, and as of now only tests the Game factory function which holds all the game logic. Will expand to include tests for the DOM.
+
 ## Future Plans
 
 * A complete rework, this thing is ugly and ~~broken~~.

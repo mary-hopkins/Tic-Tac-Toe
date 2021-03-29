@@ -1,0 +1,22 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "For information about Tic-Tac-Toe in general, see the Wikipedia page => [Tic-Tac-Toe](https://en.wikipedia.org/wiki/Tic-tac-toe). For information about this particular implementation of Tic-Tac-Toe, please check README.md",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "jest --collectCoverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mary-hopkins/Tic-Tac-Toe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mary-hopkins/Tic-Tac-Toe/issues"
+  },
+  "homepage": "https://github.com/mary-hopkins/Tic-Tac-Toe#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
