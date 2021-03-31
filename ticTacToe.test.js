@@ -2,6 +2,7 @@ const Game = require('./scripts');
 
 ////////// Tests for Game Factory Function //////////
 ///// Testing for wins/scratches /////
+// mock up a win for X, O and scratch
 
 
 ///// Handle Player Action /////

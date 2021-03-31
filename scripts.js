@@ -1,26 +1,21 @@
 /*
 This file is broken up into a few sections: 
-1. DOM declarations 
-2. Utility Functions 
-3. Event Listeners
-4. DOM manipulation Functions
-5. Game Logic
-6. Program Hook stuffsS
+1. Utility Functions 
+2. Event Listeners
+3. DOM manipulation Functions
+4. Game Logic
+5. Hook on Page Load and Test Export
 
 On page load, game = Game("", "") is called to initialize an empty game.
 
-The first half of this site is getting player name input. After this is completed, 
-The first thing that happens after is buildGame is called, which creates the Player Name Forms and their confirmation buttons/listeners
+The first half of this program is getting player name input. The first thing that happens after p[age laod is buildGame 
+is called, which creates the Player Name Forms and their confirmation buttons/listeners
 When a player confirms their name, their button is disabled and we check to see if all players are confirmed
+
 InitializeGame is called, which pulls name info and starts the game logic then deletes the forms/replaces them with cards.
-Also draws the board, adds GameEventListeners
+Also draws the board, adds GameEventListeners. From there the game loop takes over and doesn't end until a winner/scratch 
+game is reached.
 */
-
-
-////////// DOM Declarations /////////
-let display = document.querySelector("#display");
-let playerBlock = document.querySelector("#players"); 
-let board_cell =  document.querySelector("#board-cell");
 
 ////////// Utility Functions //////////
 // Handles calls to DOM manipulation and interfaces with Game Logic through object "game".
@@ -149,6 +144,7 @@ function removeCellListeners() {
 ////////// DOM manipulation Functions //////////
 
 /// Player Block ///
+let playerBlock = document.querySelector("#players"); 
 
 function createPlayerNameForms() {
   let playerArray = [["Player One", "playerone", "confirmplayerone", "X"], ["Player Two", "playertwo", "confirmplayertwo", "O"]];
@@ -232,21 +228,22 @@ function switchPlayerFormsToCards () {
 }
 
 /// Board Block ///
-
 function drawGameBoard() {
+  let boardCell =  document.querySelector("#board-cell");
   let arrayOfMarks = game.getBoardAsArray();
-  board_cell.innerHTML = "";
+  boardCell.innerHTML = "";
   for(let i = 0; i < 9; i++) {
     let square = document.createElement('div');
     square.classList.add("cell");
     square.textContent = arrayOfMarks[i];
     square.setAttribute("data-index", i);
-    board_cell.appendChild(square);
+    boardCell.appendChild(square);
   }
 }
 
 /// Message Block ///
 function displayMessage(message) {
+  let display = document.querySelector("#display");
   display.textContent = message;
 }
 
@@ -361,7 +358,6 @@ let game = Game("", "");
 window.onload = function() {
   buildGame();
 };
-
 
 /////////// Jest Test Suite Export //////////
 module.exports = Game;
